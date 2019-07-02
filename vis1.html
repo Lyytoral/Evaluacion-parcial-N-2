@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+
+    <meta name="generator" content="Jekyll v3.8.5">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <TITLE>Análisis académico</TITLE>
+<meta http-equiv="Content-Type" content="text/html; ISO-8859-1">
+<META NAME="DC.Language" SCHEME="RFC1766" CONTENT="Spanish">
+<META NAME="AUTHOR" CONTENT="Julio Figueroa">
+<META NAME="KEYWORDS" CONTENT="universidad,diseño,diseño gráfico,vida universitaria,seminario">
+<META NAME="Resource-type" CONTENT="Document">
+<META NAME="DateCreated" CONTENT="Tue, 2 July 2019 00:00:00 GMT+1">
+<META NAME="robots" content="ALL">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="Style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- Image and text -->
+
+    </header>
+
+    <main role="main">
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row">
+                    <div style="background-color: dimgray" class="col-4">
+
+                        <a class="navbar-brand " href="index.html">
+                            <p class="home">Julio Figueroa <img src="img/sea.svg" width="30" height="30"> </p>
+                        </a>
+
+                        <h1 class="display-4">Crédito y carga</h1>
+                        <p class="lead">Esta visualización muestra la relación existente entre el creditaje que se la da a un ramo, la carga presencial y la carga externa en torno a este.
+                            <p class="lead2"><a class="navbar-brand " href="vis2.html">
+                            Siguiente
+                        </a></p>
+                    </div>
+
+                    <div class="col-8">
+                        <div class="text-center" id="visualizacion"></div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+<script>
+        function setup() {
+            // Define un lienzo de 720 pixeles de ancho y 400 de alto
+            createCanvas(720, 660).parent("visualizacion");
+
+            noStroke();
+
+            //Texto 
+            fill(231, 76, 60);
+            text('Universidad', 10, 330);
+            fill(142, 68, 173);
+            text('Transporte', 120, 330);
+            fill(52, 152, 219);
+            text('Familia', 230, 330);
+            fill(22, 160, 133);
+            text('Amigues', 340, 330);
+            fill(46, 204, 113);
+            text('Pareja', 450, 330);
+            fill(241, 196, 15);
+            text('Ocio', 560, 330);
+            fill(44, 62, 80);
+            text('dormir', 670, 330);
+            //Lunes
+            //univ
+            fill(231, 76, 60);
+            rect(10, 30, 60 * 3, 30);
+            //trans
+            fill(142, 68, 173);
+            rect(190, 30, 30 * 3, 30);
+            //fam
+            fill(52, 152, 219);
+            rect(280, 30, 30 * 3, 30);
+            //amig
+            fill(22, 160, 133);
+            rect(370, 30, 30 * 3, 30);
+            //pareja
+            fill(46, 204, 113);
+            rect(460, 30, 0 * 3, 30);
+            //ocio
+            fill(241, 196, 15);
+            rect(460, 30, 40 * 3, 30);
+            //dor
+            fill(44, 62, 80);
+            rect(580, 30, 50 * 3, 30);
+
+            //Martes
+            //univ
+            fill(231, 76, 60);
+            rect(10, 70, 80 * 3, 30);
+            //trans
+            fill(142, 68, 173);
+            rect(250, 70, 30 * 3, 30);
+            //fam
+            fill(52, 152, 219);
+            rect(340, 70, 30 * 3, 30);
+            //amig
+            fill(22, 160, 133);
+            rect(430, 70, 30 * 3, 30);
+            //pareja
+            fill(46, 204, 113);
+            rect(520, 70, 0 * 3, 30);
+            //ocio
+            fill(241, 196, 15);
+            rect(520, 70, 0 * 3, 30);
+            //dor
+            fill(44, 62, 80);
+            rect(520, 70, 70 * 3, 30);
+
+            //Miercoles
+            //univ
+            fill(231, 76, 60);
+            rect(10, 110, 20 * 3, 30);
+            //trans
+            fill(142, 68, 173);
+            rect(70, 110, 20 * 3, 30);
+            //fam
+            fill(52, 152, 219);
+            rect(130, 110, 20 * 3, 30);
+            //amig
+            fill(22, 160, 133);
+            rect(190, 110, 20 * 3, 30);
+            //pareja
+            fill(46, 204, 113);
+            rect(250, 110, 20 * 3, 30);
+            //ocio
+            fill(241, 196, 15);
+            rect(310, 110, 80 * 3, 30);
+            //dor
+            fill(44, 62, 80);
+            rect(550, 110, 60 * 3, 30);
+
+            //Jueves
+            //univ
+            fill(231, 76, 60);
+            rect(10, 150, 70 * 3, 30);
+            //trans
+            fill(142, 68, 173);
+            rect(220, 150, 30 * 3, 30);
+            //fam
+            fill(52, 152, 219);
+            rect(310, 150, 30 * 3, 30);
+            //amig
+            fill(22, 160, 133);
+            rect(400, 150, 30 * 3, 30);
+            //pareja
+            fill(46, 204, 113);
+            rect(490, 150, 20 * 3, 30);
+            //ocio
+            fill(241, 196, 15);
+            rect(550, 150, 10 * 3, 30);
+            //dor
+            fill(44, 62, 80);
+            rect(580, 150, 50 * 3, 30);
+
+            //Viernes
+            //univ
+            fill(231, 76, 60);
+            rect(10, 190, 80 * 3, 30);
+            //trans
+            fill(142, 68, 173);
+            rect(250, 190, 30 * 3, 30);
+            //fam
+            fill(52, 152, 219);
+            rect(340, 190, 30 * 3, 30);
+            //amig
+            fill(22, 160, 133);
+            rect(430, 190, 30 * 3, 30);
+            //pareja
+            fill(46, 204, 113);
+            rect(520, 190, 0 * 3, 30);
+            //ocio
+            fill(241, 196, 15);
+            rect(520, 190, 0 * 3, 30);
+            //dor
+            fill(44, 62, 80);
+            rect(520, 190, 70 * 3, 30);
+
+            //Sabado
+            //univ
+            fill(231, 76, 60);
+            rect(10, 230, 20 * 3, 30);
+            //trans
+            fill(142, 68, 173);
+            rect(70, 230, 20 * 3, 30);
+            //fam
+            fill(52, 152, 219);
+            rect(130, 230, 20 * 3, 30);
+            //amig
+            fill(22, 160, 133);
+            rect(190, 230, 20 * 3, 30);
+            //pareja
+            fill(46, 204, 113);
+            rect(250, 230, 0 * 3, 30);
+            //ocio
+            fill(241, 196, 15);
+            rect(250, 230, 80 * 3, 30);
+            //dor
+            fill(44, 62, 80);
+            rect(490, 230, 80 * 3, 30);
+
+            //Domingo
+            //univ
+            fill(231, 76, 60);
+            rect(10, 270, 30 * 3, 30);
+            //trans
+            fill(142, 68, 173);
+            rect(100, 270, 20 * 3, 30);
+            //fam
+            fill(52, 152, 219);
+            rect(160, 270, 20 * 3, 30);
+            //amig
+            fill(22, 160, 133);
+            rect(220, 270, 20 * 3, 30);
+            //pareja
+            fill(46, 204, 113);
+            rect(280, 270, 40 * 3, 30);
+            //ocio
+            fill(241, 196, 15);
+            rect(400, 270, 50 * 3, 30);
+            //dor
+            fill(44, 62, 80);
+            rect(550, 270, 60 * 3, 30);
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

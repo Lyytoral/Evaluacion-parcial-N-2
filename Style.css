@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap');
+.lead {
+    padding-top: 2rem;
+    padding-bottom: 12rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    text-align: right;
+    color: floralwhite;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.lead2 {
+    padding-top: 2rem;
+    padding-bottom: 30rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    text-align: right;
+    color: floralwhite;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.home {
+    color: darkturquoise;
+    padding-top: 1rem;
+    text-align: right;
+    padding-right: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.display-4 {
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    color: floralwhite;
+}
+
+.navbar-brand {
+    padding-left: 15rem;
+}
+
+h2 {
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+navegacion {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    color: darkturquoise text-align: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.visualizacion {
+    padding-top: 5rem;
+}
+
+.textvis {
+    background: linear-gradient(black, lightgray);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding-top: 13rem;
+}
+
+.textvis2 {
+    background: linear-gradient(gray, darkgray);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding-top: 16rem;
+}
+
+.textvis3 {
+    background: linear-gradient(turquoise, darkturquoise);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding-top: 0rem;
+}
+
+.g,
+.four-text {
+    font-size: 5rem;
+    color: gray;
+}
+
+.jumbotron {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    background-color: floralwhite;
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    .jumbotron {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+}
+
+.jumbotron p:last-child {
+    margin-bottom: 0;
+}
+
+.jumbotron-heading {
+    font-weight: 300;
+}
+
+.jumbotron .container {
+    text-align: left;
+    max-width: 120rem;
+    background-color: floralwhite;
+}
+
+.container {
+    align-content: flex-start;
+}
+
+.fotoA {
+    color: white;
+    background: url(img/1.jpg) no-repeat;
+    opacity: 1;
+    background-size: 900px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fotoA:hover {
+    opacity: 0.8;
+    webkit-transition: 0, 5s;
+}
+
+.fotoB {
+    color: white;
+    background: url(img/2.jpg) no-repeat;
+    opacity: 1;
+    background-size: 1000px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fotoB:hover {
+    opacity: 0.8;
+    webkit-transition: 0, 5s;
+}
+
+.fotoC {
+    color: white;
+    background: url(img/3.jpg) no-repeat;
+    opacity: 1;
+    background-size: 900px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fotoC:hover {
+    opacity: 0.8;
+    -webkit-transition: 0, 5s;
+}
+
+.fotoD {
+    color: white;
+    background: url(img/4.jpg) no-repeat;
+    opacity: 1;
+    background-size: 900px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fotoD:hover {
+    opacity: 0.8;
+    webkit-transition: 0, 5s;
+}
